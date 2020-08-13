@@ -1,5 +1,7 @@
 FROM node:12-alpine as builder
 
+RUN apk add git bash
+
 WORKDIR /srv/tower
 COPY . .
 
@@ -7,6 +9,4 @@ RUN npm install expo-cli --global
 RUN npm install
 RUN expo build:web
 
-FROM builder
-
-CMD [ "npm", "start" ]
+CMD [ "expo", "start:web" ]
