@@ -1,6 +1,6 @@
-[submodule "tower-server"]
-	path = tower-server
-	url = ./tower-client
-[submodule "tower-client"]
-	path = tower-client
-	url = ./tower-client
+[submodule "client"]
+	path = client
+	url = ./client
+[submodule "server"]
+	path = server
+	url = ./server
